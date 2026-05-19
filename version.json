@@ -1,0 +1,8 @@
+{
+  "version": "10.3",
+  "release_date": "2026-05-12",
+  "release_notes": "v10.3 更新內容\n\n• 新增塔羅歷史記錄（過去 30 天回顧）\n• 新增日柱避忌智能提示\n• 自動偵測待辦項目與今日宜忌衝突\n• 完整塔羅 78 牌資料庫\n• 黃道吉日查找工具\n\n感謝您的支持！",
+  "download_url": "https://hml1980.github.io/laibai-todo/TodoStickyNote.exe",
+  "homepage_url": "https://hml1980.github.io/laibai-todo/",
+  "min_version_must_upgrade": "0.0"
+}
