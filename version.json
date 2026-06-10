@@ -1,8 +1,7 @@
 {
   "version": "10.4",
-  "min_version_must_upgrade": "0.0",
-  "release_date": "2026-06-01",
-  "release_notes": "本次更新（建議所有用戶重新下載）：\n\n【中文輸入體驗修正】\n• 注音狀態下能正常打 ( ) & % $ # @ ! 等符號（之前會被輸入法吃掉）\n• 方向鍵 ←→↑↓、Home/End、Shift+方向鍵選取全部正常運作\n\n【新增便利功能】\n• 輸入框新增右鍵選單：剪下／複製／貼上／全選\n• 日期欄支援多種格式：5/31、5-31、5月31日、115/5/31 等都可\n• 「檢視 → 管理例行事項」可一次檢視並刪除所有循環項目（含今天不顯示的）\n\n【提醒視窗】\n• 紅字事項標題過長時會自動換行，不再被切斷\n\n【排序修正】\n• 逾期事項排列：逾期天數較多者排在前面（先處理拖最久的）\n\n【其他】\n• 複製事項對話框補齊原本只有新增才有的選項（指定週幾、每 N 天、遇假日調整、請假補做等）\n• 外觀設定視窗可上下捲動，按鈕不再被切到\n• 新增「逾期判斷」設定區（標準版以上）：寬鬆／嚴格、逾期警告、灰字提示\n\n感謝您的支持，使用上有任何問題或 BUG 請來信 linebooks2026@gmail.com",
-  "download_url": "https://hml1980.github.io/laibai-todo/TodoStickyNote.exe",
-  "homepage_url": "https://hml1980.github.io/laibai-todo/"
+  "build": "R40",
+  "release_date": "2026-06-10",
+  "download_url": "https://github.com/HML1980/laibai-todo/releases/download/v10.4-R40/desktop_release_客戶版.zip",
+  "release_notes": "🎉 R32~R40 累積更新\n\n【新功能】\n• 子任務必要/選擇性標記：⭐ 必要 / 🔹 選擇性\n• 季循環：每 N 個月 X 號\n• 事件型循環：完成後自動再生\n• 一鍵管理所有例行事項\n\n【體驗修正】\n• 注音輸入符號正常輸入\n• 全面標楷體\n• 子任務水平捲軸統一\n• 新增早時段項目正確排序\n\n【資料安全】\n• 跨月/跨年若上一期未完成，子任務進度保留\n• 事件循環再生時子任務徹底重置"
 }
