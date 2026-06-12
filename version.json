@@ -2,6 +2,6 @@
   "version": "10.4",
   "build": "R49",
   "release_date": "2026-06-11",
-  "download_url": "https://github.com/HML1980/laibai-todo/releases/download/v10.4/TodoStickyNote_Setup_v10.4.exe",
+  "download_url": "https://github.com/HML1980/laibai-todo/releases/latest/download/TodoStickyNote_Setup_v10.4.exe,
   "release_notes": "🎉 R32~R49 累積更新\n\n【新功能】\n• 子任務必要/選擇性標記（▲ 必要 / ● 選擇性）\n  - 有 ▲ 時所有 ▲ 都勾才完成\n  - 全部是 ● 時勾任一個就完成\n• 季循環（每 N 個月 X 號）\n• 事件型循環（完成後自動再生）\n• 預計事項遇假日順延 / 提前\n• 預計分頁採「對話框新增」設計，子任務一次填到位\n\n【體驗修正】\n• 注音輸入符號正常輸入\n• 全面標楷體\n• 子任務水平捲軸統一在底部\n• 新增早時段例行事項正確排序\n• 分頁標籤與內容區同色邊框，視覺一體\n\n【資料安全】\n• 跨月/跨年若上一期未完成，子任務進度保留\n• 事件循環再生時子任務徹底重置\n• 嚴格逾期支援例行事項"
 }
