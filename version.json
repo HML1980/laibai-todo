@@ -1,9 +1,9 @@
 {
   "version": "10.4",
-  "build": 52,
-  "build_label": "R52",
+  "build": 65,
+  "build_label": "R65",
   "release_date": "2026-06-12",
   "download_url": "https://github.com/HML1980/laibai-todo/releases/latest/download/TodoStickyNote_Setup_v10.4.exe",
   "homepage_url": "https://hml1980.github.io/laibai-todo/",
-  "release_notes": "🎉 R32~R52 累積更新\n\n【新功能】\n• 子任務必要 / 選擇性標記（▲ 必要 / ● 選擇性）\n  - 有 ▲ 時所有 ▲ 都勾才完成\n  - 全部是 ● 時勾任一個就完成\n• 季循環（每 N 個月 X 號）\n• 事件型循環（完成後自動再生）\n• 預計事項遇假日順延 / 提前\n• 預計分頁採「對話框新增」設計\n• 自動更新比對 build（同 version 下小版號也能觸發提示）\n\n【體驗修正】\n• 版本說明對話框可捲動，小螢幕也能看到授權碼輸入區\n• 注音輸入符號正常輸入\n• 全面標楷體\n• 子任務水平捲軸統一在底部\n• 新增早時段例行事項正確排序\n• 分頁標籤與內容區同色邊框\n\n【資料安全】\n• 跨月 / 跨年若上一期未完成，子任務進度保留\n• 事件循環再生時子任務徹底重置"
+  "release_notes": "🔧 R65 三條線主選單的頂層 cascade 補圖示\n\n☰ 點開後第一層的三個項目：\n• 📂 檔案\n• 📑 檢視\n• 📓 便利貼（主便利貼）\n\n之前只補了內部子項目，標題本身沒圖示，現在從頂層到子項目全部視覺一致。"
 }
