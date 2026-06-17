@@ -23,81 +23,225 @@
     background: linear-gradient(180deg, #FFFEF5 0%, #F5F0DC 100%);
   }
   .logo {
-    width: 110px; height: 110px; margin: 0 auto 20px;
+    width: 110px;
+    height: 110px;
+    margin: 0 auto 20px;
     border-radius: 16px;
     box-shadow: 0 4px 14px rgba(31, 82, 50, 0.25);
     display: block;
   }
-  h1 { font-size: 38px; color: #1F5232; margin-bottom: 12px; letter-spacing: 1px; }
-  .tagline { font-size: 19px; color: #5A5A5A; margin-bottom: 32px; }
+  h1 {
+    font-size: 38px;
+    color: #1F5232;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+  }
+  .tagline {
+    font-size: 19px;
+    color: #5A5A5A;
+    margin-bottom: 32px;
+  }
   .cta-row { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
   .btn {
-    display: inline-block; padding: 14px 32px; font-size: 17px; font-weight: bold;
-    border-radius: 6px; text-decoration: none;
-    transition: transform 0.15s, box-shadow 0.15s; cursor: pointer; border: none;
+    display: inline-block;
+    padding: 14px 32px;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: transform 0.15s, box-shadow 0.15s;
+    cursor: pointer;
+    border: none;
   }
   .btn:hover { transform: translateY(-2px); box-shadow: 0 6px 14px rgba(0,0,0,0.15); }
   .btn-primary { background: #D4A017; color: white; }
   .btn-secondary { background: white; color: #1F5232; border: 2px solid #1F5232; }
+
   section { padding: 70px 0; }
-  section h2 { font-size: 30px; color: #1F5232; text-align: center; margin-bottom: 16px; }
-  section .sub { text-align: center; color: #777; font-size: 16px; margin-bottom: 50px; }
-  .pain-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
-  .pain-card { background: white; padding: 28px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
-  .pain-card h3 { color: #B8392E; margin-bottom: 8px; font-size: 18px; }
-  .pain-card .solution { color: #1F5232; margin-top: 12px; padding-top: 12px; border-top: 1px dashed #ddd; font-size: 15px; }
-  .pricing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 40px; }
-  .tier { background: white; border: 1px solid #DDD; border-radius: 10px; padding: 32px 24px; display: flex; flex-direction: column; }
+  section h2 {
+    font-size: 30px;
+    color: #1F5232;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  section .sub {
+    text-align: center;
+    color: #777;
+    font-size: 16px;
+    margin-bottom: 50px;
+  }
+  .pain-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+  }
+  .pain-card {
+    background: white;
+    padding: 28px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  .pain-card h3 {
+    color: #B8392E;
+    margin-bottom: 8px;
+    font-size: 18px;
+  }
+  .pain-card .solution {
+    color: #1F5232;
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px dashed #ddd;
+    font-size: 15px;
+  }
+  .pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 40px;
+  }
+  .tier {
+    background: white;
+    border: 1px solid #DDD;
+    border-radius: 10px;
+    padding: 32px 24px;
+    display: flex;
+    flex-direction: column;
+  }
   .tier.featured {
-    border: 2px solid #D4A017; transform: scale(1.04);
-    box-shadow: 0 8px 24px rgba(212, 160, 23, 0.2); position: relative;
+    border: 2px solid #D4A017;
+    transform: scale(1.04);
+    box-shadow: 0 8px 24px rgba(212, 160, 23, 0.2);
+    position: relative;
   }
   .tier.featured::before {
-    content: '★ 推薦'; position: absolute; top: -12px; left: 50%;
-    transform: translateX(-50%); background: #D4A017; color: white;
-    padding: 4px 14px; border-radius: 12px; font-size: 13px; font-weight: bold;
+    content: '★ 推薦';
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #D4A017;
+    color: white;
+    padding: 4px 14px;
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight: bold;
   }
-  .tier h3 { font-size: 22px; color: #1F5232; margin-bottom: 8px; }
-  .tier .price { font-size: 36px; color: #D4A017; font-weight: bold; margin: 12px 0 4px; }
-  .tier .price-note { color: #999; font-size: 13px; margin-bottom: 20px; }
+  .tier h3 {
+    font-size: 22px;
+    color: #1F5232;
+    margin-bottom: 8px;
+  }
+  .tier .price {
+    font-size: 36px;
+    color: #D4A017;
+    font-weight: bold;
+    margin: 12px 0 4px;
+  }
+  .tier .price-note {
+    color: #999;
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
   .tier ul { list-style: none; flex: 1; }
-  .tier li { padding: 6px 0; font-size: 14px; color: #444; }
-  .tier li::before { content: '✓ '; color: #1F5232; font-weight: bold; margin-right: 4px; }
+  .tier li {
+    padding: 6px 0;
+    font-size: 14px;
+    color: #444;
+  }
+  .tier li::before {
+    content: '✓ ';
+    color: #1F5232;
+    font-weight: bold;
+    margin-right: 4px;
+  }
   .tier li.disabled { color: #BBB; }
   .tier li.disabled::before { content: '× '; color: #CCC; }
-  .tier .btn { margin-top: 24px; width: 100%; text-align: center; }
-  .roadmap { background: #F5F0DC; padding: 30px; border-radius: 10px; margin: 30px 0; }
-  .roadmap h3 { color: #1F5232; margin-bottom: 16px; text-align: center; }
-  .roadmap-item { display: flex; align-items: flex-start; padding: 12px 0; border-bottom: 1px dashed #DDD; }
+  .tier .btn {
+    margin-top: 24px;
+    width: 100%;
+    text-align: center;
+  }
+  .roadmap {
+    background: #F5F0DC;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 30px 0;
+  }
+  .roadmap h3 {
+    color: #1F5232;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+  .roadmap-item {
+    display: flex;
+    align-items: flex-start;
+    padding: 12px 0;
+    border-bottom: 1px dashed #DDD;
+  }
   .roadmap-item:last-child { border-bottom: none; }
   .roadmap-badge {
-    min-width: 80px; padding: 4px 10px; border-radius: 4px;
-    font-size: 13px; font-weight: bold; text-align: center; margin-right: 16px;
+    min-width: 80px;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    margin-right: 16px;
   }
   .badge-done { background: #C8E6C9; color: #1B5E20; }
   .badge-coming { background: #FFE0B2; color: #E65100; }
   .badge-planned { background: #E0E0E0; color: #555; }
-  .faq-item { background: white; padding: 18px 24px; border-radius: 8px; margin-bottom: 10px; box-shadow: 0 1px 4px rgba(0,0,0,0.04); }
-  .faq-item summary { cursor: pointer; font-weight: bold; color: #1F5232; font-size: 16px; }
-  .faq-item p { margin-top: 12px; color: #555; font-size: 15px; }
-  .refund-policy { background: #FFF9E6; border-left: 4px solid #D4A017; padding: 18px 24px; margin: 20px 0; border-radius: 4px; }
-  footer { background: #1F5232; color: #D4E5B5; padding: 40px 0; text-align: center; font-size: 14px; }
+  .faq-item {
+    background: white;
+    padding: 18px 24px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  }
+  .faq-item summary {
+    cursor: pointer;
+    font-weight: bold;
+    color: #1F5232;
+    font-size: 16px;
+  }
+  .faq-item p {
+    margin-top: 12px;
+    color: #555;
+    font-size: 15px;
+  }
+  .refund-policy {
+    background: #FFF9E6;
+    border-left: 4px solid #D4A017;
+    padding: 18px 24px;
+    margin: 20px 0;
+    border-radius: 4px;
+  }
+  footer {
+    background: #1F5232;
+    color: #D4E5B5;
+    padding: 40px 0;
+    text-align: center;
+    font-size: 14px;
+  }
   footer a { color: #D4A017; text-decoration: none; }
   @media (max-width: 768px) {
     .pricing-grid { grid-template-columns: 1fr; }
     .tier.featured { transform: none; }
-    h1 { font-size: 28px; } section h2 { font-size: 24px; }
+    h1 { font-size: 28px; }
+    section h2 { font-size: 24px; }
   }
 </style>
 </head>
 <body>
 
+<!-- 測試版限時優惠 banner -->
 <div style="background:linear-gradient(135deg,#D2691E,#FF8C42);color:white;padding:16px 20px;text-align:center;font-size:16px;line-height:1.6;">
-  <strong style="font-size:18px;">🎉 v10.4 持續更新中（R52・2026/06/12）</strong><br>
+  <strong style="font-size:18px;">🎉 v10.4 測試版正式上線！</strong><br>
   <span style="font-size:15px;">2026/05/20 ~ 2026/08/18 期間，<strong>所有功能完全免費</strong>（含八字命理、流年運勢、塔羅日簽、黃道吉日等高級功能）</span><br>
   <span style="background:rgba(255,255,255,0.2);padding:3px 10px;border-radius:4px;display:inline-block;margin-top:4px;font-size:14px;">🎁 找到 BUG 可獲「終身高級版授權」 · 回報信箱 linebooks2026@gmail.com</span>
 </div>
 
+<!-- SmartScreen 警告提示 banner -->
 <div style="background:#FFF3CD;border-bottom:3px solid #FFC107;padding:14px 20px;text-align:center;color:#664D03;font-size:15px;line-height:1.6;">
   <strong style="color:#D2691E;">⚠️ 首次安裝注意</strong><br>
   Windows 會跳出「<strong>Microsoft Defender SmartScreen 已防止無法辨識的應用程式</strong>」警告，這是新軟體未付費購買數位簽章時的正常現象，<strong>並不代表程式有問題</strong>。<br>
@@ -115,46 +259,6 @@
     </div>
   </div>
 </header>
-
-<section style="background:linear-gradient(135deg,#FFF8E6,#FFE9CC);padding:50px 0;">
-  <div class="container">
-    <h2 style="color:#D2691E;">🆕 R52 累積更新（2026/06/12）</h2>
-    <p class="sub">從 R32 到 R52，21 個版本累積的新功能與修正</p>
-    <div style="background:white;padding:28px 32px;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.06);">
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;">
-        <div>
-          <h3 style="color:#1F5232;margin-bottom:12px;">🎯 新功能</h3>
-          <ul style="margin-left:18px;color:#444;line-height:2;">
-            <li>子任務 ▲ 必要 / ● 選擇性切換</li>
-            <li>季循環（每 N 個月 X 號）</li>
-            <li>事件型循環（完成後自動再生）</li>
-            <li>預計事項遇假日順延 / 提前</li>
-            <li>自動更新比對 build（小版號也提醒）</li>
-          </ul>
-        </div>
-        <div>
-          <h3 style="color:#1F5232;margin-bottom:12px;">🔧 體驗修正</h3>
-          <ul style="margin-left:18px;color:#444;line-height:2;">
-            <li>注音輸入符號正常輸入</li>
-            <li>全面標楷體</li>
-            <li>子任務水平捲軸統一在底部</li>
-            <li>分頁標籤與內容區同色邊框</li>
-            <li>授權對話框可捲動（小螢幕也能填）</li>
-          </ul>
-        </div>
-        <div>
-          <h3 style="color:#1F5232;margin-bottom:12px;">🛡️ 資料安全</h3>
-          <ul style="margin-left:18px;color:#444;line-height:2;">
-            <li>跨期未完成保留子任務進度</li>
-            <li>事件循環再生時徹底重置</li>
-            <li>嚴格逾期支援例行事項</li>
-            <li>逾期項目按天數降序排列</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
 <section>
   <div class="container">
@@ -190,14 +294,6 @@
         <p>當日 / 每月 / 每年 / 預計 / 固定 / 已完成。每月每年事項在觸發日當天自動投影到當日。</p>
       </div>
       <div class="pain-card">
-        <h3>▲● 彈性子任務</h3>
-        <p>每個子任務可標 ▲ 必要 或 ● 選擇性。必要全部做完才算完成；有選擇性時做任一個都算。彈性高、不被流水帳綁架。</p>
-      </div>
-      <div class="pain-card">
-        <h3>🔁 多元循環設定</h3>
-        <p>每天、每月、每年、季循環、指定週幾、每 N 天、事件型循環（完成後自動再生）。各種週期需求一次到位。</p>
-      </div>
-      <div class="pain-card">
         <h3>☯️ 老黃曆每日運勢</h3>
         <p>建除日、宜忌、沖煞、運勢評等。讓妳每天打開就知道今日適合什麼。</p>
       </div>
@@ -224,10 +320,11 @@
 <section id="pricing">
   <div class="container">
     <h2>方案與購買</h2>
-    <p class="sub">一次買斷，終身使用 · 信用卡線上付款，授權碼自動寄信</p>
+    <p class="sub">一次買斷，終身使用，授權碼綁定 1 台電腦</p>
 
+    <!-- 測試版優惠橫幅 -->
     <div style="background:linear-gradient(135deg,#FFE4B5,#FFD580);border:2px solid #D2691E;border-radius:10px;padding:20px;text-align:center;margin:24px 0;">
-      <strong style="font-size:18px;color:#D2691E;">🎉 測試版優惠中(2026/05/20 ~ 2026/08/18)</strong>
+      <strong style="font-size:18px;color:#D2691E;">🎉 測試版優惠中（2026/05/20 ~ 2026/08/18）</strong>
       <p style="margin:8px 0;color:#664D03;">
         測試期內所有使用者免費享受「<strong>高級版</strong>」全部功能。<br>
         若您願意提前支持，可於下方購買，<strong>授權碼立即生效，永久有效</strong>。
@@ -263,8 +360,8 @@
         <ul>
           <li>免費版全部功能</li>
           <li>標籤系統（彩色分類）</li>
-          <li>子任務 ▲/● 必選性</li>
-          <li>自訂循環規則（季循環、事件型）</li>
+          <li>子任務雙向連動</li>
+          <li>自訂循環規則</li>
           <li>優先等級 ★★★</li>
           <li>統計儀表板</li>
           <li>週視圖</li>
@@ -273,7 +370,7 @@
           <li>到時自動提醒</li>
           <li>多便利貼（3 張）</li>
         </ul>
-        <a class="btn btn-primary" href="https://laibai.duckdns.org/pay/">💳 立即購買</a>
+        <a class="btn btn-primary" href="mailto:linebooks2026@gmail.com?subject=購買標準版%20NT%24149&body=您好%2C我想購買「待辦事項便利貼」標準版%E3%80%82%0A%0A我的姓名%3A__________%0A匯款後我會再回信告知%E3%80%82%0A謝謝%21">立即購買</a>
       </div>
       <div class="tier">
         <h3>💎 高級版</h3>
@@ -284,37 +381,26 @@
           <li>個人化八字命理</li>
           <li>每日命格契合度</li>
           <li>🆕 流年運勢分析</li>
-          <li>大運查詢(虛歲推算)</li>
-          <li>塔羅每日一牌(含牌圖)</li>
+          <li>大運查詢（虛歲推算）</li>
+          <li>塔羅每日一牌（含牌圖）</li>
           <li>塔羅 30 天歷史</li>
           <li>黃道吉日查找</li>
           <li>日柱避忌智能提示</li>
           <li>多便利貼無上限</li>
         </ul>
-        <a class="btn btn-secondary" href="https://laibai.duckdns.org/pay/">💳 立即購買</a>
+        <a class="btn btn-secondary" href="mailto:linebooks2026@gmail.com?subject=購買高級版%20NT%24499&body=您好%2C我想購買「待辦事項便利貼」高級版%E3%80%82%0A%0A我的姓名%3A__________%0A匯款後我會再回信告知%E3%80%82%0A謝謝%21">立即購買</a>
       </div>
     </div>
 
     <div class="refund-policy">
-      <strong>📋 購買流程(信用卡 1 分鐘完成)</strong>
+      <strong>📋 購買流程</strong>
       <ol style="margin: 10px 0 0 24px; color: #555; line-height:1.8;">
-        <li>點上方「<strong>💳 立即購買</strong>」進入安全結帳頁</li>
-        <li>填入<strong>姓名</strong>（將刻入授權碼，App 啟用時要輸入相同姓名）與 <strong>Email</strong></li>
-        <li>選擇版本：標準版 NT$149 或高級版 NT$499</li>
-        <li>導向綠界金流（ECPay）安全結帳頁，刷信用卡完成付款</li>
-        <li>授權碼<strong>自動寄到您填的 Email</strong>(通常 1 分鐘內)</li>
-        <li>開啟 App「檢視 → 升級方案」，<strong>滾到對話框最底部</strong>，輸入姓名與授權碼即可解鎖</li>
+        <li>點「<strong>立即購買</strong>」開啟 email</li>
+        <li>告知您的姓名與購買版本</li>
+        <li>我們會在 24 小時內回信告知銀行匯款資訊</li>
+        <li>匯款後回傳帳號末 5 碼確認</li>
+        <li>對帳成功後寄送授權碼（通常 1 個工作天內）</li>
       </ol>
-      <p style="margin-top:14px; color:#666; font-size:14px;">
-        💡 沒信用卡？歡迎來信 <a href="mailto:linebooks2026@gmail.com?subject=銀行匯款購買&body=您好%2C我想用銀行匯款購買%E3%80%82%0A%0A購買版本(標準%2F高級)%3A__________%0A我的姓名%3A__________%0A聯絡email%3A__________%0A謝謝%21" style="color:#D4A017;">linebooks2026@gmail.com</a> 改用銀行匯款，對帳後人工寄發授權碼。
-      </p>
-
-      <p style="margin-top: 18px; color: #555; line-height:1.7;">
-        <strong>🛡️ 金流安全</strong><br>
-        信用卡付款全程透過<strong>綠界科技 ECPay</strong>處理，符合 PCI DSS 國際信用卡安全標準。<br>
-        我們的伺服器<strong>不會接觸您的信用卡號或安全碼</strong>，僅收到綠界回傳的「付款成功」通知。<br>
-        刷卡資料只在綠界系統流轉，您可放心使用。
-      </p>
 
       <p style="margin-top: 18px; color: #555; line-height:1.7;">
         <strong>📜 退費政策</strong><br>
@@ -337,7 +423,7 @@
     </div>
 
     <div class="refund-policy" style="background:#E8F5E9; border-left-color:#4CAF50;">
-      <strong>💎 批量購買優惠</strong>（請來信洽詢，人工開立授權碼）
+      <strong>💎 批量購買優惠</strong>
       <table style="width:100%; margin-top:10px; font-size:14px; color:#555;">
         <tr style="border-bottom:1px solid #ddd;">
           <td style="padding:6px 4px;"><strong>套數</strong></td>
@@ -364,8 +450,8 @@
       <div class="roadmap-item">
         <span class="roadmap-badge badge-done">已完成</span>
         <div>
-          <strong>v10.4（2026 年 5 月首發、6 月 R52 累積更新）</strong>　桌面 App 正式上線<br>
-          <span style="color:#666;font-size:14px;">含個人化八字命理、塔羅、黃道吉日、子任務 ▲/●、季循環、事件型循環、自動更新</span>
+          <strong>v10.4（2026 年 5–6 月）</strong>　桌面 App 正式上線，持續更新<br>
+          <span style="color:#666;font-size:14px;">含個人化八字命理、塔羅、黃道吉日、自動更新；最新版更新了複製事項、備註欄與待辦排序體驗</span>
         </div>
       </div>
       <div class="roadmap-item">
@@ -390,12 +476,9 @@
   <div class="container" style="text-align: center;">
     <h2>下載免費版</h2>
     <p class="sub">Windows 10/11 適用，安裝程式自動建立桌面捷徑</p>
-    <a class="btn btn-primary" href="https://github.com/HML1980/laibai-todo/releases/latest/download/TodoStickyNote_Setup_v10.4.exe" download>📥 下載安裝程式</a>
+    <a class="btn btn-primary" href="https://github.com/HML1980/laibai-todo/releases/download/v10.4/TodoStickyNote_Setup_v10.4.exe" download>📥 下載安裝程式</a>
     <p style="margin-top: 16px; font-size: 13px; color: #888;">
-      最新版本 R52（2026/06/12）｜ <a href="manual.html" style="color: #D4A017;">查看使用手冊</a>
-    </p>
-    <p style="margin-top: 8px; font-size: 12px; color: #AAA;">
-      📌 已安裝者：App 啟動時會自動檢查更新，有新版會跳提示，不必反覆來這裡下載
+      檔案大小約 18 MB ｜ <a href="manual.html" style="color: #D4A017;">查看使用手冊</a>
     </p>
   </div>
 </section>
@@ -404,6 +487,7 @@
   <div class="container">
     <h2>安全與隱私</h2>
     <p class="sub">為什麼您可以安心安裝與使用</p>
+
     <div class="pain-grid">
       <div class="pain-card">
         <h3 style="color: #1F5232;">🔒 純本地存儲</h3>
@@ -480,30 +564,8 @@
       <p>是的，免費版的功能永久免費，不會在某天突然要求付費。我們只是用「升級提示」鼓勵妳支持開發。免費版項目上限為 100 個。</p>
     </details>
     <details class="faq-item">
-      <summary>App 會自動更新嗎？</summary>
-      <p>會！App 啟動時會背景檢查更新（每 12 小時最多一次），有新版會跳出「🎉 有新版可下載」對話框，含更新說明跟一鍵下載按鈕。不必反覆回網頁查。<br>不想被打擾？可在 App 旁邊建一個空白檔名為 <code>.no_update_check</code> 永久關閉檢查。</p>
-    </details>
-    <details class="faq-item">
-      <summary>付款後多久收到授權碼？</summary>
-      <p>信用卡付款成功後，授權碼通常 <strong>1 分鐘內</strong>會自動寄到您填寫的 Email（請查垃圾信件匣）。如果 10 分鐘後仍未收到，請來信 linebooks2026@gmail.com 提供您的訂單編號（在綠界付款成功頁面可見），我們會人工協助。</p>
-    </details>
-    <details class="faq-item">
-      <summary>授權碼怎麼啟用？</summary>
-      <p>開啟 App → 上方選單「<strong>檢視 → 🎁 升級方案 / 版本說明</strong>」→ 跳出對話框後 <strong>滾到最底部</strong>，會看到「已購買？輸入授權碼啟用：」區塊，填姓名（必須跟結帳時填的完全一樣）和授權碼，按啟用即可。</p>
-    </details>
-    <details class="faq-item">
-      <summary>子任務的 ▲ 跟 ● 是什麼意思？怎麼用？</summary>
-      <p>R40+ 新增的子任務必選性標記。在編輯事項對話框中，每個子任務旁有一個小按鈕：</p>
-      <ul style="margin:8px 0 0 24px; color:#555;">
-        <li><strong>▲ 必要（紅，預設）</strong>：要勾完所有 ▲ 才算整個事項完成</li>
-        <li><strong>● 選擇性（綠）</strong>：勾任一個 ● 就算整個事項完成</li>
-        <li><strong>混合時以 ▲ 為準</strong>：把所有 ▲ 勾完即算完成，● 不影響</li>
-      </ul>
-      <p style="margin-top:8px; color:#555;">例如「報稅資料整理」有 6 個子任務，其中 1 個其實不一定要做——標 ●，剩 5 個標 ▲。做完那 5 個 ▲ 就算完成，不會被卡住。</p>
-    </details>
-    <details class="faq-item">
       <summary>付費後可以在幾台電腦使用？</summary>
-      <p>1 個授權碼綁定 1 台電腦（依電腦識別碼）。需要換電腦時來信申請轉移，新電腦啟用後舊電腦失效。</p>
+      <p>沒有設備數量限制。妳可以在自己的桌機、筆電、辦公室電腦等多台機器使用同一組授權碼。請勿外流給他人。</p>
     </details>
     <details class="faq-item">
       <summary>未來會有雲端同步嗎？需要再付錢？</summary>
