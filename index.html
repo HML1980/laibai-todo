@@ -344,6 +344,16 @@
       </p>
     </div>
 
+    <!-- 早鳥優惠橫幅（JS 控制：8/20 前顯示，8/20 起自動隱藏） -->
+    <div id="eb-banner" style="display:none;background:linear-gradient(135deg,#1F5232,#2E7D4F);color:white;border-radius:10px;padding:18px 20px;text-align:center;margin:0 0 24px;">
+      <strong style="font-size:19px;">🐦 早鳥優惠價（限時）</strong>
+      <p style="margin:8px 0 0;font-size:16px;line-height:1.7;">
+        標準版 <span style="text-decoration:line-through;opacity:.7;">NT$149</span> → <strong style="color:#FFD580;font-size:20px;">NT$99</strong>　·　
+        高級版 <span style="text-decoration:line-through;opacity:.7;">NT$499</span> → <strong style="color:#FFD580;font-size:20px;">NT$349</strong>
+      </p>
+      <p style="margin:6px 0 0;font-size:14px;opacity:.9;">優惠至 <strong>2026/08/19</strong>，<strong>8/20 起恢復原價</strong>。授權碼立即生效、永久有效。</p>
+    </div>
+
     <div class="pricing-grid">
       <div class="tier">
         <h3>免費版</h3>
@@ -365,8 +375,8 @@
       </div>
       <div class="tier featured">
         <h3>⭐ 標準版</h3>
-        <div class="price">NT$ 149</div>
-        <div class="price-note">一次買斷，永久使用</div>
+        <div class="price" id="p-std">NT$ 149</div>
+        <div class="price-note" id="pn-std">一次買斷，永久使用</div>
         <ul>
           <li>免費版全部功能</li>
           <li>標籤系統（彩色分類）</li>
@@ -384,8 +394,8 @@
       </div>
       <div class="tier">
         <h3>💎 高級版</h3>
-        <div class="price">NT$ 499</div>
-        <div class="price-note">命理師與深度愛好者</div>
+        <div class="price" id="p-prem">NT$ 499</div>
+        <div class="price-note" id="pn-prem">命理師與深度愛好者</div>
         <ul>
           <li>標準版全部功能</li>
           <li>個人化八字命理</li>
@@ -407,7 +417,7 @@
       <ol style="margin: 10px 0 0 24px; color: #555; line-height:1.8;">
         <li>點「<strong>💳 立即購買</strong>」進入安全結帳頁</li>
         <li>填入<strong>姓名</strong>（將刻入授權碼，App 啟用時要輸入相同姓名）與 <strong>Email</strong></li>
-        <li>選擇版本：標準版 NT$149 或高級版 NT$499</li>
+        <li>選擇版本（標準版／高級版，價格以上方方案區為準）</li>
         <li>導向綠界金流（ECPay）安全結帳頁，刷信用卡完成付款</li>
         <li>授權碼<strong>自動寄到您填的 Email</strong>（通常 1 分鐘內）</li>
         <li>開啟 App「檢視 → 升級方案」，滾到對話框最底部，輸入姓名與授權碼即可解鎖</li>
@@ -442,8 +452,8 @@
       <table style="width:100%; margin-top:10px; font-size:14px; color:#555;">
         <tr style="border-bottom:1px solid #ddd;">
           <td style="padding:6px 4px;"><strong>套數</strong></td>
-          <td style="padding:6px 4px;"><strong>標準版 NT$149</strong></td>
-          <td style="padding:6px 4px;"><strong>高級版 NT$499</strong></td>
+          <td style="padding:6px 4px;"><strong>標準版</strong></td>
+          <td style="padding:6px 4px;"><strong>高級版</strong></td>
         </tr>
         <tr><td style="padding:4px;">2 套</td><td>NT$269（9 折）</td><td>NT$899（9 折）</td></tr>
         <tr><td style="padding:4px;">5 套</td><td>NT$595（8 折）</td><td>NT$1,996（8 折）</td></tr>
@@ -621,5 +631,20 @@
   </div>
 </footer>
 
+<script>
+/* 早鳥優惠：即日起至 2026/08/19，2026/08/20 00:00 起自動恢復原價。
+   預設 HTML 顯示「原價」，只有在期限內才由 JS 切換成早鳥價，
+   萬一 JS 未執行，顧客只會看到原價（不會出現「看到低價卻被收原價」）。 */
+(function () {
+  var revert = new Date(2026, 7, 20, 0, 0, 0); // 月份 0-based：7 = 8 月 → 2026/08/20 00:00
+  if (new Date() >= revert) return; // 已過期 → 維持原價，不動
+  function set(id, html) { var el = document.getElementById(id); if (el) el.innerHTML = html; }
+  var eb = document.getElementById('eb-banner'); if (eb) eb.style.display = 'block';
+  set('p-std', '<span style="text-decoration:line-through;color:#bbb;font-size:22px;">NT$149</span> <span style="color:#D2691E;">NT$ 99</span>');
+  set('pn-std', '🐦 早鳥優惠價（至 8/19）· 一次買斷永久使用');
+  set('p-prem', '<span style="text-decoration:line-through;color:#bbb;font-size:22px;">NT$499</span> <span style="color:#D2691E;">NT$ 349</span>');
+  set('pn-prem', '🐦 早鳥優惠價（至 8/19）· 命理師與深度愛好者');
+})();
+</script>
 </body>
 </html>
