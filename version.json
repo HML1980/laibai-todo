@@ -1,6 +1,6 @@
 {
   "version": "10.5",
-  "build": 69,
+  "build": 70,
   "release_date": "2026-06-26",
   "release_notes": "v10.5 更新發布\n\n🎉 全新功能\n• 專案系統：為有期程的計畫（考試、搬家、辦活動…）建立專屬分頁，含倒數、進度條、項目與子任務、完成封存\n• 占卜問事六法：擲筊、求籤、塔羅、盧恩、易經、命格，幫你對猶豫的事下決定\n• 占卜→待辦：占完一鍵把決定排成待辦，問完就去做\n• 同一問題六法方向一致，且會隨日期與作為改變\n\n🔧 修正\n• 修復順延項目子任務完成後不沉底的問題\n\n📅 測試期：2026-05-20 ~ 2026-08-18（90 天）\n測試期內所有使用者免費享有完整功能，先試用再決定。\n\n🎁 找到 BUG 可獲終身高級版授權\n📧 回報信箱：linebooks2026@gmail.com",
   "download_url": "https://github.com/HML1980/laibai-todo/releases/latest/download/TodoStickyNote_Setup.exe",
