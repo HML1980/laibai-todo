@@ -236,8 +236,8 @@
 
 <!-- 測試版限時優惠 banner -->
 <div style="background:linear-gradient(135deg,#D2691E,#FF8C42);color:white;padding:16px 20px;text-align:center;font-size:16px;line-height:1.6;">
-  <strong style="font-size:18px;">🎉 v10.4 測試版正式上線！</strong><br>
-  <span style="font-size:15px;">2026/05/20 ~ 2026/08/18 期間，<strong>所有功能完全免費</strong>（含八字命理、流年運勢、塔羅日簽、黃道吉日等高級功能）</span><br>
+  <strong style="font-size:18px;">🎉 v10.5 測試版正式上線！</strong><br>
+  <span style="font-size:15px;">2026/05/20 ~ 2026/08/18 期間，<strong>所有功能完全免費</strong>（含專案系統、占卜問事六法、八字命理、流年運勢、塔羅日簽、黃道吉日等）</span><br>
   <span style="background:rgba(255,255,255,0.2);padding:3px 10px;border-radius:4px;display:inline-block;margin-top:4px;font-size:14px;">🎁 找到 BUG 可獲「終身高級版授權」 · 回報信箱 linebooks2026@gmail.com</span>
 </div>
 
@@ -248,21 +248,11 @@
   通過方法：點警告視窗左下角「<strong style="background:#FFC107;padding:2px 6px;border-radius:3px;">其他資訊</strong>」→ 下方出現「<strong style="background:#28A745;color:white;padding:2px 6px;border-radius:3px;">仍要執行</strong>」→ 點下去即可正常安裝。
 </div>
 
-<!-- 新版升級宣導 banner -->
-<div style="background:#E8F5E9;border-bottom:3px solid #1F5232;padding:16px 20px;text-align:center;color:#1F5232;font-size:15px;line-height:1.75;">
-  <strong style="font-size:17px;">🆕 已更新至最新版，建議升級</strong><br>
-  <span style="font-size:15px;">本次更新：上班日<strong>自動跳過國定假日</strong>（端午等不再誤判逾期）、複製事項一鍵帶入完整設定、備註欄加大可捲動、待辦排序更穩定、開放線上刷卡購買。</span><br>
-  <span style="background:#FFF3CD;color:#664D03;padding:8px 14px;border-radius:6px;display:inline-block;margin-top:10px;font-size:14px;border:1px solid #FFC107;line-height:1.7;">
-    📌 <strong>升級前請先備份你的待辦</strong>：開啟舊版 →「<strong>📂 檔案 → 💾 匯出資料…</strong>」存到 C 槽或雲端 → 安裝新版後 →「<strong>📂 檔案 → 📂 匯入資料…</strong>」即可帶回所有待辦。<br>
-    （新版調整了資料儲存位置，<strong>不會自動沿用舊資料</strong>，請務必先匯出再升級。）
-  </span>
-</div>
-
 <header>
   <div class="container">
     <img class="logo" src="logo.png" alt="籟柏" onerror="this.style.display='none'">
     <h1>📌 待辦事項便利貼</h1>
-    <p class="tagline">結合八字命理與老黃曆的桌面待辦工具<br>讓您的行程，與天時相應</p>
+    <p class="tagline">結合八字命理與老黃曆的桌面待辦工具<br>管理專案、用占卜下決定，讓您的行程與天時相應</p>
     <div class="cta-row">
       <a class="btn btn-primary" href="#download">免費下載</a>
       <a class="btn btn-secondary" href="#pricing">查看方案</a>
@@ -344,16 +334,6 @@
       </p>
     </div>
 
-    <!-- 早鳥優惠橫幅（JS 控制：8/20 前顯示，8/20 起自動隱藏） -->
-    <div id="eb-banner" style="display:none;background:linear-gradient(135deg,#1F5232,#2E7D4F);color:white;border-radius:10px;padding:18px 20px;text-align:center;margin:0 0 24px;">
-      <strong style="font-size:19px;">🐦 早鳥優惠價（限時）</strong>
-      <p style="margin:8px 0 0;font-size:16px;line-height:1.7;">
-        標準版 <span style="text-decoration:line-through;opacity:.7;">NT$149</span> → <strong style="color:#FFD580;font-size:20px;">NT$99</strong>　·　
-        高級版 <span style="text-decoration:line-through;opacity:.7;">NT$499</span> → <strong style="color:#FFD580;font-size:20px;">NT$349</strong>
-      </p>
-      <p style="margin:6px 0 0;font-size:14px;opacity:.9;">優惠至 <strong>2026/08/19</strong>，<strong>8/20 起恢復原價</strong>。授權碼立即生效、永久有效。</p>
-    </div>
-
     <div class="pricing-grid">
       <div class="tier">
         <h3>免費版</h3>
@@ -375,8 +355,8 @@
       </div>
       <div class="tier featured">
         <h3>⭐ 標準版</h3>
-        <div class="price" id="p-std">NT$ 149</div>
-        <div class="price-note" id="pn-std">一次買斷，永久使用</div>
+        <div class="price">NT$ 149</div>
+        <div class="price-note">一次買斷，永久使用</div>
         <ul>
           <li>免費版全部功能</li>
           <li>標籤系統（彩色分類）</li>
@@ -390,12 +370,12 @@
           <li>到時自動提醒</li>
           <li>多便利貼（3 張）</li>
         </ul>
-        <a class="btn btn-primary" href="https://laibai.duckdns.org/pay/">💳 立即購買</a>
+        <a class="btn btn-primary" href="mailto:linebooks2026@gmail.com?subject=購買標準版%20NT%24149&body=您好%2C我想購買「待辦事項便利貼」標準版%E3%80%82%0A%0A我的姓名%3A__________%0A匯款後我會再回信告知%E3%80%82%0A謝謝%21">立即購買</a>
       </div>
       <div class="tier">
         <h3>💎 高級版</h3>
-        <div class="price" id="p-prem">NT$ 499</div>
-        <div class="price-note" id="pn-prem">命理師與深度愛好者</div>
+        <div class="price">NT$ 499</div>
+        <div class="price-note">命理師與深度愛好者</div>
         <ul>
           <li>標準版全部功能</li>
           <li>個人化八字命理</li>
@@ -408,24 +388,19 @@
           <li>日柱避忌智能提示</li>
           <li>多便利貼無上限</li>
         </ul>
-        <a class="btn btn-secondary" href="https://laibai.duckdns.org/pay/">💳 立即購買</a>
+        <a class="btn btn-secondary" href="mailto:linebooks2026@gmail.com?subject=購買高級版%20NT%24499&body=您好%2C我想購買「待辦事項便利貼」高級版%E3%80%82%0A%0A我的姓名%3A__________%0A匯款後我會再回信告知%E3%80%82%0A謝謝%21">立即購買</a>
       </div>
     </div>
 
     <div class="refund-policy">
-      <strong>📋 購買流程（信用卡 1 分鐘完成）</strong>
+      <strong>📋 購買流程</strong>
       <ol style="margin: 10px 0 0 24px; color: #555; line-height:1.8;">
-        <li>點「<strong>💳 立即購買</strong>」進入安全結帳頁</li>
-        <li>填入<strong>姓名</strong>（將刻入授權碼，App 啟用時要輸入相同姓名）與 <strong>Email</strong></li>
-        <li>選擇版本（標準版／高級版，價格以上方方案區為準）</li>
-        <li>導向綠界金流（ECPay）安全結帳頁，刷信用卡完成付款</li>
-        <li>授權碼<strong>自動寄到您填的 Email</strong>（通常 1 分鐘內）</li>
-        <li>開啟 App「檢視 → 升級方案」，滾到對話框最底部，輸入姓名與授權碼即可解鎖</li>
+        <li>點「<strong>立即購買</strong>」開啟 email</li>
+        <li>告知您的姓名與購買版本</li>
+        <li>我們會在 24 小時內回信告知銀行匯款資訊</li>
+        <li>匯款後回傳帳號末 5 碼確認</li>
+        <li>對帳成功後寄送授權碼（通常 1 個工作天內）</li>
       </ol>
-
-      <p style="margin-top:14px; color:#666; font-size:14px;">
-        💡 沒信用卡？歡迎來信 <a href="mailto:linebooks2026@gmail.com?subject=銀行匯款購買" style="color:#D4A017;">linebooks2026@gmail.com</a> 改用銀行匯款，對帳後人工寄發授權碼。
-      </p>
 
       <p style="margin-top: 18px; color: #555; line-height:1.7;">
         <strong>📜 退費政策</strong><br>
@@ -452,8 +427,8 @@
       <table style="width:100%; margin-top:10px; font-size:14px; color:#555;">
         <tr style="border-bottom:1px solid #ddd;">
           <td style="padding:6px 4px;"><strong>套數</strong></td>
-          <td style="padding:6px 4px;"><strong>標準版</strong></td>
-          <td style="padding:6px 4px;"><strong>高級版</strong></td>
+          <td style="padding:6px 4px;"><strong>標準版 NT$149</strong></td>
+          <td style="padding:6px 4px;"><strong>高級版 NT$499</strong></td>
         </tr>
         <tr><td style="padding:4px;">2 套</td><td>NT$269（9 折）</td><td>NT$899（9 折）</td></tr>
         <tr><td style="padding:4px;">5 套</td><td>NT$595（8 折）</td><td>NT$1,996（8 折）</td></tr>
@@ -475,8 +450,15 @@
       <div class="roadmap-item">
         <span class="roadmap-badge badge-done">已完成</span>
         <div>
-          <strong>v10.4（2026 年 5–6 月）</strong>　桌面 App 正式上線，持續更新<br>
-          <span style="color:#666;font-size:14px;">含個人化八字命理、塔羅、黃道吉日、自動更新；最新版強化了上班日的國定假日判斷、複製事項、備註欄與待辦排序體驗</span>
+          <strong>桌面 App 正式上線（2026 年 5 月）</strong><br>
+          <span style="color:#666;font-size:14px;">含個人化八字命理、塔羅、黃道吉日、自動更新</span>
+        </div>
+      </div>
+      <div class="roadmap-item">
+        <span class="roadmap-badge badge-done">已完成</span>
+        <div>
+          <strong>v10.5（2026 年 6 月）　專案系統＋占卜問事六法</strong><br>
+          <span style="color:#666;font-size:14px;">專案分頁（倒數／進度／子任務／封存）、擲筊求籤塔羅盧恩易經命格、占卜一鍵轉待辦</span>
         </div>
       </div>
       <div class="roadmap-item">
@@ -501,7 +483,7 @@
   <div class="container" style="text-align: center;">
     <h2>下載免費版</h2>
     <p class="sub">Windows 10/11 適用，安裝程式自動建立桌面捷徑</p>
-    <a class="btn btn-primary" href="https://github.com/HML1980/laibai-todo/releases/latest/download/TodoStickyNote_Setup_v10.4.exe" download>📥 下載安裝程式</a>
+    <a class="btn btn-primary" href="https://github.com/HML1980/laibai-todo/releases/download/v10.5/TodoStickyNote_Setup_v10.5.exe" download>📥 下載安裝程式</a>
     <p style="margin-top: 16px; font-size: 13px; color: #888;">
       檔案大小約 18 MB ｜ <a href="manual.html" style="color: #D4A017;">查看使用手冊</a>
     </p>
@@ -631,20 +613,5 @@
   </div>
 </footer>
 
-<script>
-/* 早鳥優惠：即日起至 2026/08/19，2026/08/20 00:00 起自動恢復原價。
-   預設 HTML 顯示「原價」，只有在期限內才由 JS 切換成早鳥價，
-   萬一 JS 未執行，顧客只會看到原價（不會出現「看到低價卻被收原價」）。 */
-(function () {
-  var revert = new Date(2026, 7, 20, 0, 0, 0); // 月份 0-based：7 = 8 月 → 2026/08/20 00:00
-  if (new Date() >= revert) return; // 已過期 → 維持原價，不動
-  function set(id, html) { var el = document.getElementById(id); if (el) el.innerHTML = html; }
-  var eb = document.getElementById('eb-banner'); if (eb) eb.style.display = 'block';
-  set('p-std', '<span style="text-decoration:line-through;color:#bbb;font-size:22px;">NT$149</span> <span style="color:#D2691E;">NT$ 99</span>');
-  set('pn-std', '🐦 早鳥優惠價（至 8/19）· 一次買斷永久使用');
-  set('p-prem', '<span style="text-decoration:line-through;color:#bbb;font-size:22px;">NT$499</span> <span style="color:#D2691E;">NT$ 349</span>');
-  set('pn-prem', '🐦 早鳥優惠價（至 8/19）· 命理師與深度愛好者');
-})();
-</script>
 </body>
 </html>
